@@ -1,0 +1,116 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SimpleContacts" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="eFf-55-iVM">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="KNs-Id-Jbx">
+                                    <size key="itemSize" width="121" height="127"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells>
+                                    <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="ContactCell" id="40w-jR-QAv" customClass="ContactCollectionViewCell" customModule="SimpleContacts" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="121" height="127"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO">
+                                            <rect key="frame" x="0.0" y="0.0" width="121" height="127"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NW6-tU-kwP" userLabel="Contact Container">
+                                                    <rect key="frame" x="0.0" y="0.0" width="121" height="127"/>
+                                                    <subviews>
+                                                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="ZWT-WL-H8n" userLabel="Information Stack">
+                                                            <rect key="frame" x="0.0" y="0.0" width="121" height="127"/>
+                                                            <subviews>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Work" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9ZY-RK-LhS" userLabel="Category Label">
+                                                                    <rect key="frame" x="0.0" y="0.0" width="121" height="32"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Ching" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LnR-nf-Gqw" userLabel="Lastname Label">
+                                                                    <rect key="frame" x="0.0" y="32" width="121" height="31.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Chris" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jZg-iX-TTl" userLabel="Firstname Label">
+                                                                    <rect key="frame" x="0.0" y="63.5" width="121" height="32"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="1234" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pOh-jW-aCt" userLabel="Contactnum Label">
+                                                                    <rect key="frame" x="0.0" y="95.5" width="121" height="31.5"/>
+                                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                                    <nil key="textColor"/>
+                                                                    <nil key="highlightedColor"/>
+                                                                </label>
+                                                            </subviews>
+                                                        </stackView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <constraints>
+                                                        <constraint firstAttribute="bottom" secondItem="ZWT-WL-H8n" secondAttribute="bottom" id="6oI-Gw-Gjs"/>
+                                                        <constraint firstItem="ZWT-WL-H8n" firstAttribute="leading" secondItem="NW6-tU-kwP" secondAttribute="leading" id="AZC-WV-r7q"/>
+                                                        <constraint firstAttribute="trailing" secondItem="ZWT-WL-H8n" secondAttribute="trailing" id="OHd-Kv-Rdb"/>
+                                                        <constraint firstItem="ZWT-WL-H8n" firstAttribute="top" secondItem="NW6-tU-kwP" secondAttribute="top" id="nCC-Dp-paL"/>
+                                                    </constraints>
+                                                </view>
+                                            </subviews>
+                                        </view>
+                                        <constraints>
+                                            <constraint firstItem="NW6-tU-kwP" firstAttribute="top" secondItem="40w-jR-QAv" secondAttribute="top" id="Q3e-mI-aWL"/>
+                                            <constraint firstAttribute="bottom" secondItem="NW6-tU-kwP" secondAttribute="bottom" id="XOV-ON-bLd"/>
+                                            <constraint firstAttribute="trailing" secondItem="NW6-tU-kwP" secondAttribute="trailing" id="juP-YI-2HZ"/>
+                                            <constraint firstItem="NW6-tU-kwP" firstAttribute="leading" secondItem="40w-jR-QAv" secondAttribute="leading" id="sGI-WE-ddi"/>
+                                        </constraints>
+                                        <connections>
+                                            <outlet property="categoryLabel" destination="9ZY-RK-LhS" id="QEf-0G-JGV"/>
+                                            <outlet property="contactnumLabel" destination="pOh-jW-aCt" id="1lc-BG-RhN"/>
+                                            <outlet property="containerView" destination="NW6-tU-kwP" id="Uh0-AJ-GI9"/>
+                                            <outlet property="firstnameLabel" destination="jZg-iX-TTl" id="dPj-RF-zna"/>
+                                            <outlet property="lastnameLabel" destination="LnR-nf-Gqw" id="366-Xc-5Cw"/>
+                                        </connections>
+                                    </collectionViewCell>
+                                </cells>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="eFf-55-iVM" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="YAe-v5-Z3X"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="eFf-55-iVM" secondAttribute="bottom" id="cKl-zI-jUa"/>
+                            <constraint firstItem="eFf-55-iVM" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="fpO-9A-JYW"/>
+                            <constraint firstItem="eFf-55-iVM" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="j4q-SS-exq"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <connections>
+                        <outlet property="collectionView" destination="eFf-55-iVM" id="j5j-Sz-vx8"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="34.782608695652179" y="18.75"/>
+        </scene>
+    </scenes>
+</document>
